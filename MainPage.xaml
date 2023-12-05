@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThreadLock.MainPage">
+    <ScrollView>
+        <StackLayout Margin="20">
+            <Label Text="Entradas Disponibles"
+                   FontSize="20"
+                   HorizontalOptions="Center" />
+            <Label x:Name="lblEntradas"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,10" />
+            <Button x:Name="btnComprarEntrada"
+                    Text="Comprar Entrada"
+                    Clicked="OnComprarEntradaClicked"
+                    FontSize="20"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    CornerRadius="5"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="0,20" />
+            
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="CenterAndExpand">
+                <Label Text="Threads"
+                       FontSize="Header" />
+                <BoxView x:Name="indicador1"
+                         Color="LightGray"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         Margin="5" />
+                <BoxView x:Name="indicador2"
+                         Color="LightGray"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         Margin="5" />
+                <BoxView x:Name="indicador3"
+                         Color="LightGray"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         Margin="5" />
+                <BoxView x:Name="indicador4"
+                         Color="LightGray"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         Margin="5" />
+                <BoxView x:Name="indicador5"
+                         Color="LightGray"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         Margin="5" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
